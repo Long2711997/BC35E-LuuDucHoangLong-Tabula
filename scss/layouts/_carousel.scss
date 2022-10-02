@@ -1,0 +1,24 @@
+#carousel{
+    background-image: url(../images/yellow_top_wave_01.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: $pd-caro;
+    
+    .row{
+        .caro_left{
+            height: 500px;
+            .caro_left_container{
+                .bt_bb_headline_superheadline {
+                        display: block;
+                        @include style-text($fs-2, $fw-2, $color-main);
+                    }
+            
+                    .bt_bb_headline_content {
+                        display: block;
+                        @include style-text($fs-3-8, $fw-3, #121212);
+                    }
+            }
+            
+        }
+    }
+}

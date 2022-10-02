@@ -1,0 +1,31 @@
+#teachers{
+    position: relative;
+    top: -150px;
+    .teacher_top{
+        padding-top: 150px;
+        background-image: url(../images/Violet_top_left_wave.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .teacher_bottom{
+        background-image: url(../images/Wave_White_bottom_right_shape_01.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgb(220, 209, 240);
+        padding-bottom: 150px;
+    }
+    .card_container{
+        padding-bottom: 40px;
+        .card{
+            text-align: center;
+            .card-title{
+                @include style-text($fs-1, $fw-2, $color-main);
+            }
+
+            .teachers_content{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+header{
+    .navbar{
+            position: absolute;
+    }
+    .menu{
+        .nav-link {
+                @include style-text($fs-1, $fw-2, #181818);
+                line-height: 80px;
+                padding: 25px !important;
+            }
+    }
+
+    .topBarInMenu{
+        width: 300px;
+        .btButtonWidget{
+            padding-right: 10px;
+    
+            a{
+                text-decoration: none;
+                .fa-phone{
+                    padding-right: 10px;
+                }
+                // box-shadow: 0 0 0 3em #b61984 inset;
+                border: 1px solid $color-main;
+                background-color: $color-main;
+                padding: 15px 20px;
+                @include style-text($fs-1, $fw-2, #fff);
+                border-radius: 50px;
+                                transition: all .5s ease-out;
+                &:hover{
+                background-color: #fff;
+                box-shadow: 0 0 0 1px $color-main inset;
+                color: $color-main !important;
+                
+            }
+            }
+        }
+
+        .btIconWidget{
+            float: left;
+                    line-height: 80px;
+        }
+
+        .fa-brands{
+            float: left;
+            padding: 0 5px;
+            @include style-text($fs-1, $fw-2, #181818);
+            line-height: 80px;
+        }
+    }
+    
+
+    img{
+        width: 80px;
+    }
+
+}
+

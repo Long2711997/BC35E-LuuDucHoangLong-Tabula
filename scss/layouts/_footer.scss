@@ -1,0 +1,51 @@
+footer{
+    height: 500px;
+    background-image: url(../images/footer_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -103px ;
+    position: relative;
+    
+    .row{
+        padding-top: 30px;
+        .col-3{
+            h4{
+                @include style-text($fs-3, $fw-2, $color-white-1);
+            }
+            li{
+                list-style-type: none;
+                @include style-text($fs-1, $fw-2, $color-white-1);
+                padding-top: 20px;
+            }
+            .fa-solid, .fa-brands{
+                color: $color-white-1;
+                padding-right: 10px;
+            }
+            input{
+                background-color: $color-main;
+                margin-top: 30px;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                @include border-style($bd-default, $solid, $color-main, $br, $color-main, $color-white-1);
+                text-align: center;
+                caret-color: $color-white-1;
+                &::placeholder{
+                    color: $color-white-1;
+                }
+                &:focus{
+                    border: 1px solid $color-white-1;
+                }
+            }
+            button{
+                padding: 15px 90px;
+                margin-top: 30px;
+                @include border-style($bd-default, $solid, $color-white-1, $br, $color-white-1, $color-dark-2);
+                font-size: $fs-1;
+                transition: all .3s;
+                &:hover{
+                    @include border-style($bd-default, $solid, $color-white-1, $br, $color-main, $color-white-1);
+                }
+            }
+        }
+    }
+}

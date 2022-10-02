@@ -1,0 +1,14 @@
+@mixin style-text($fs, $fw, $color){
+    font-size: $fs  !important;
+    font-weight: $fw;
+    color: $color !important;
+}
+
+@mixin border-style($bd, $bs, $bd-color, $brs, $bg, $color){
+    border-width: $bd;
+    border-style: $bs;
+    border-color: $bd-color;
+    border-radius: $br;
+    background-color: $bg;
+    color: $color
+}
