@@ -45,5 +45,11 @@
             background-color: transparent;
         }
         }
+        #errorName{
+            @include style-text(13px, $fw-1, $color-main);
+        }
+        #errorMail{
+            @extend #errorName
+        }
     }
 }

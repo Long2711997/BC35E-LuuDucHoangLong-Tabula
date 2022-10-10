@@ -163,7 +163,11 @@ header img {
   color: #b61984 !important;
   background-color: transparent;
 }
-
+#info_form form #errorName, #info_form form #errorMail {
+  font-size: 13px !important;
+  font-weight: 400;
+  color: #b61984 !important;
+}
 footer {
   height: 500px;
   background-image: url(../images/footer_background.jpg);
